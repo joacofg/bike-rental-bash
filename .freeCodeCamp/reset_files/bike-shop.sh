@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 PSQL="psql -X --username=freecodecamp --dbname=bikes --tuples-only -c"
 
 echo -e "\n~~~~~ Bike Rental Shop ~~~~~\n"
@@ -10,6 +11,11 @@ MAIN_MENU() {
     echo -e "\n$1"
   fi
 
+=======
+echo -e "\n~~~~~ Bike Rental Shop ~~~~~\n"
+
+MAIN_MENU() {
+>>>>>>> a93556bbd55227dae3409b5cc2d71af3f07eadd7
   echo "How may I help you?" 
   echo -e "\n1. Rent a bike\n2. Return a bike\n3. Exit"
   read MAIN_MENU_SELECTION
@@ -23,6 +29,7 @@ MAIN_MENU() {
 }
 
 RENT_MENU() {
+<<<<<<< HEAD
   # get available bikes
   AVAILABLE_BIKES=$($PSQL "SELECT bike_id, type, size FROM bikes WHERE available = true ORDER BY bike_id")
 
@@ -155,6 +162,13 @@ RETURN_MENU() {
       fi
     fi
   fi
+=======
+  echo "Rent Menu"
+}
+
+RETURN_MENU() {
+  echo "Return Menu"
+>>>>>>> a93556bbd55227dae3409b5cc2d71af3f07eadd7
 }
 
 EXIT() {

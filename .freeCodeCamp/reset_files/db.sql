@@ -217,6 +217,7 @@ INSERT INTO public.rentals VALUES (1, 1, 1, '2021-05-25', '2021-05-27');
 --
 
 SELECT pg_catalog.setval('public.bikes_bike_id_seq', 9, true);
+SELECT pg_catalog.setval('public.bikes_bike_id_seq', 9, true);
 
 
 --
